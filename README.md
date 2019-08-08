@@ -2,10 +2,10 @@ Usage
 =====
 
 0. clone repo with ```git clone https://github.com/dPeS/pronto``` or download zip file
-1. get "Client Secret" from https://apps.developer.allegro.pl
-2. put it into "allegro_token" file
-3. install python3 from https://python.org
-4. ```cd pronto```
+1. ```cd pronto```
+2. get "Client Secret" from https://apps.developer.allegro.pl
+3. put it into "allegro_token" file
+4. install python3 from https://python.org
 5. run scaner from shell:
 ```python3 allegro_scaner.py```
 
