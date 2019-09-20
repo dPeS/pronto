@@ -5,17 +5,19 @@ import urllib.request
 import csv
 import time
 import json
+import base64
 
 # GET TEMP TOKEN
 try:
-    with open("allegro_token") as f:
-        token = f.read()
+    with open("allegro_creds") as f:
+        token = f.readlines()
 except:
-    raise Exception("no token found! pls create allegro_token file")
+    raise Exception("no creds found! pls create allegro_creds file: CLIENT_ID:CLIENT_SECRET inside")
 
 URL = 'https://allegro.pl/auth/oauth/token?grant_type=client_credentials'
+
 HEADERS = {
-    'Authorization': 'Basic {}'.format(token[:-1])
+    'Authorization': 'Basic {}'.format(base64.b64encode(token[0].strip().encode()).decode())
 }
 req = urllib.request.Request(
     URL,
