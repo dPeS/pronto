@@ -52,7 +52,7 @@ STOP_WORDS = (
     'stopki',
     'wycieraczki',
 )
-MAX_PRICE = 100
+MAX_PRICE = 300
 DAC_NAME = 'tda1541'
 
 #

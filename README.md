@@ -9,5 +9,5 @@ Usage
 2. run scaner from shell:
 ```python3 allegro_scan.py```
 
-adjust (edit file) settings in allegro_scaner.py file if needed
+adjust (edit file) settings in allegro_scan.py file if needed
 (default tda1541 max 100PLN)
