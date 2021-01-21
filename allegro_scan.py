@@ -50,8 +50,9 @@ STOP_WORDS = (
     'pasek',
     'paski',
     'stopki',
+    'wycieraczki',
 )
-MAX_PRICE = 50
+MAX_PRICE = 100
 DAC_NAME = 'tda1541'
 
 #
@@ -76,7 +77,6 @@ with open(FILE_WITH_DATA, newline='') as csvfile:
                 URL.format(ALLEGRO_CATEGORY_ID, urllib.parse.quote_plus(model)),
                 headers=HEADERS,
             )
-            #[ req.add_header(key, val) for key, val in HEADERS.items() ]
             try:
                 with urllib.request.urlopen(req) as response:
                     r = json.loads(response.read())
