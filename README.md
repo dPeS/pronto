@@ -7,7 +7,7 @@ Usage
 
 1. ```cd pronto-master```
 2. run scaner from shell:
-```python3 allegro_scaner.py```
+```python3 allegro_scan.py```
 
 adjust (edit file) settings in allegro_scaner.py file if needed
 (default tda1541 max 100PLN)
